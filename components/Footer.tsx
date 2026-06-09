@@ -14,14 +14,14 @@ export function Footer() {
     <footer className="border-t border-slate-200 bg-[#083B7A] text-white">
       <div className="container-shell grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <div>
+          <div className="inline-block rounded-lg bg-white p-2 shadow-sm ring-1 ring-white/30">
             <img
               src="/logo.jpg"
               alt="TruePoint Valuations"
               className="h-16 w-auto max-w-[300px] rounded-md object-contain"
             />
-            <p className="mt-1 text-sm font-semibold text-blue-100">Professional Appraisal & Valuation Services</p>
           </div>
+          <p className="mt-3 text-sm font-semibold text-blue-100">Professional Appraisal & Valuation Services</p>
           <div className="mt-5 space-y-2 text-sm text-blue-50">
             <p>{site.address}</p>
             <p>{site.cityStateZip}</p>
