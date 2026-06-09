@@ -15,7 +15,11 @@ export function Footer() {
       <div className="container-shell grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <div>
-            <p className="text-2xl font-black text-white">TruePoint Valuations</p>
+            <img
+              src="/logo.jpg"
+              alt="TruePoint Valuations"
+              className="h-16 w-auto max-w-[300px] rounded-md object-contain"
+            />
             <p className="mt-1 text-sm font-semibold text-blue-100">Professional Appraisal & Valuation Services</p>
           </div>
           <div className="mt-5 space-y-2 text-sm text-blue-50">
