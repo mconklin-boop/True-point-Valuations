@@ -8,9 +8,9 @@ export function Logo() {
       aria-label="TruePoint Valuations home"
     >
       <img
-        src="/logo.jpg"
+        src="/logo-header-white.jpg"
         alt="TruePoint Valuations"
-        className="h-14 w-auto max-w-[260px] rounded-md object-contain"
+        className="h-14 w-auto max-w-[260px] rounded-md bg-white object-contain"
       />
     </Link>
   );
