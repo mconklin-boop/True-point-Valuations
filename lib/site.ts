@@ -8,8 +8,7 @@ export const site = {
   phone: "(720) 555-0000",
   phoneHref: "tel:+17205550000",
   address: "1500 N Grant St #7339",
-  cityStateZip: "Denver, CO 80203",
-  stripePaymentLink: "https://buy.stripe.com/replace-with-your-payment-link"
+  cityStateZip: "Denver, CO 80203"
 };
 
 export const navLinks = [
@@ -17,6 +16,5 @@ export const navLinks = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/order-appraisal", label: "Order Appraisal" },
-  { href: "/payment", label: "Payment" },
   { href: "/contact", label: "Contact" }
 ];

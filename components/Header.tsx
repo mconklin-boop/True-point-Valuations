@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navLinks, site } from "@/lib/site";
+import { navLinks } from "@/lib/site";
 import { Logo } from "./Logo";
 
 export function Header() {
@@ -13,12 +13,9 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <a
-            href={site.stripePaymentLink}
-            className="rounded-md bg-[#F58220] px-4 py-2 font-bold text-white shadow-sm hover:bg-[#d96f18]"
-          >
-            Make a Payment
-          </a>
+          <Link href="/order-appraisal" className="rounded-md bg-[#F58220] px-4 py-2 font-bold text-white shadow-sm hover:bg-[#d96f18]">
+            Start Order
+          </Link>
         </nav>
       </div>
     </header>

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { PrimaryCta } from "@/components/CTA";
-import { site } from "@/lib/site";
 
 const services = [
   "Residential Appraisals",
@@ -35,8 +34,8 @@ export default function HomePage() {
               <Link href="/order-appraisal" className="rounded-lg bg-[#0B4EA2] px-6 py-3 font-bold text-white shadow-sm hover:bg-[#083B7A]">
                 Order an Appraisal
               </Link>
-              <Link href="/payment" className="rounded-lg border border-[#0B4EA2] bg-white px-6 py-3 font-bold text-[#0B4EA2] hover:bg-blue-50">
-                Make a Payment
+              <Link href="/contact" className="rounded-lg border border-[#0B4EA2] bg-white px-6 py-3 font-bold text-[#0B4EA2] hover:bg-blue-50">
+                Contact Us
               </Link>
             </div>
           </div>
@@ -68,7 +67,7 @@ export default function HomePage() {
             <p className="text-sm font-extrabold uppercase tracking-wide text-[#F58220]">Why Choose TruePoint</p>
             <h2 className="mt-2 text-4xl font-black text-[#083B7A]">Professional coordination from order intake to delivery.</h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              TruePoint Valuations supports appraisal workflows with responsive communication, organized documentation, and secure customer payment options.
+              TruePoint Valuations supports appraisal workflows with responsive communication, organized documentation, and invoice-based billing.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -77,26 +76,6 @@ export default function HomePage() {
                 <span className="mr-2 text-[#F58220]">✓</span>{reason}
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="container-shell rounded-2xl bg-[#083B7A] p-8 text-white md:p-12">
-          <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
-            <div>
-              <p className="text-sm font-extrabold uppercase tracking-wide text-blue-100">Secure online payments</p>
-              <h2 className="mt-2 text-4xl font-black">Pay for Your Appraisal</h2>
-              <p className="mt-4 max-w-2xl text-lg text-blue-50">Secure online payment processing powered by Stripe.</p>
-              <div className="mt-5 flex flex-wrap gap-3 text-sm font-semibold text-blue-50">
-                <span>SSL Secured</span>
-                <span>Stripe Payments</span>
-                <span>Major Credit Cards Accepted</span>
-              </div>
-            </div>
-            <a href={site.stripePaymentLink} className="rounded-lg bg-[#F58220] px-7 py-4 text-center text-lg font-extrabold text-white shadow-sm hover:bg-[#d96f18]">
-              Make Secure Payment
-            </a>
           </div>
         </div>
       </section>

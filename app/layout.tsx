@@ -42,7 +42,7 @@ const structuredData = {
     addressCountry: "US"
   },
   areaServed: "United States",
-  paymentAccepted: "Credit Card, Visa, Mastercard, American Express, Discover"
+  paymentAccepted: "Invoice"
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

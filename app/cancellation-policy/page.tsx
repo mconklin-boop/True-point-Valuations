@@ -13,7 +13,7 @@ export default function CancellationPolicyPage() {
         { heading: "Before Assignment Acceptance", body: "Orders may be canceled prior to assignment acceptance." },
         { heading: "After Work Has Begun", body: "Cancellation fees may apply after work has begun, including accepted assignments, scheduling activity, inspection coordination, research, review, or report preparation." },
         { heading: "How to Cancel", body: `Customers should contact TruePoint Valuations immediately if they need to cancel a request. Email ${site.email} or call ${site.phone}.` },
-        { heading: "Payment Adjustments", body: "Any refund or fee adjustment related to cancellation will be reviewed according to the status of the order and the services already performed." }
+        { heading: "Invoice Adjustments", body: "Any refund or fee adjustment related to cancellation will be reviewed according to the status of the order and the services already performed." }
       ]}
     />
   );
