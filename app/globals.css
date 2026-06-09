@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --primary-blue: #0b4ea2;
+  --dark-blue: #083b7a;
+  --orange: #f58220;
+  --light-gray: #f5f7fa;
+  --dark-text: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--dark-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  outline-color: var(--orange);
+}
+
+.container-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.card-shadow {
+  box-shadow: 0 18px 50px rgba(31, 41, 55, 0.1);
+}

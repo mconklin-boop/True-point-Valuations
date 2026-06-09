@@ -1,11 +1,11 @@
-# True Point Valuations
+# TruePoint Valuations
 
-Basic static website for True Point Valuations, an appraisal management company.
+Production-ready Next.js website for TruePoint Valuations, a real estate appraisal management company.
 
 ## Stripe setup
 
 1. Create a Stripe Payment Link in your Stripe dashboard.
-2. Open `script.js`.
+2. Open `lib/site.ts`.
 3. Replace:
 
    ```js
@@ -14,8 +14,22 @@ Basic static website for True Point Valuations, an appraisal management company.
 
    with your live Stripe Payment Link.
 
-The site uses plain HTML, CSS, and JavaScript, so it can be hosted on GitHub Pages, Netlify, Cloudflare Pages, or similar static hosting.
+## Included pages
+
+- Home
+- About
+- Services
+- Order Appraisal
+- Payment
+- Contact
+- Privacy Policy
+- Terms of Service
+- Refund Policy
+- Cancellation Policy
 
 ## Local preview
 
-Open `index.html` in a browser.
+```bash
+npm install
+npm run dev
+```
