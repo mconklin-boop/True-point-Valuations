@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact True Point Valuations for appraisal management services, customer support, and invoice questions."
+  description: "Contact True Point Valuations for appraisal coordination, valuation support, customer support, and invoice questions."
 };
 
 export default function ContactPage() {
