@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const paymentNotes = [
   "Payments are processed securely through Stripe.",
   "We do not store full credit card numbers on our servers.",
-  "Card payments are subject to invoice and order terms.",
+  "Customers pay one-time invoice payments for appraisal coordination and valuation support services.",
   "Approved refunds return to the original payment method."
 ];
 
@@ -22,12 +22,12 @@ export default function OrderAppraisalPage() {
           <p className="text-sm font-extrabold uppercase tracking-wide text-[#F58220]">Order Appraisal / Pay Invoice</p>
           <h1 className="mt-3 text-5xl font-black text-[#083B7A]">Submit an appraisal request or pay an issued invoice.</h1>
           <p className="mt-6 text-lg leading-8 text-slate-700">
-            Complete the request form and {site.name} will review the order scope, property type, location, timeline, and client requirements before confirming availability and fees.
+            Complete the request form and {site.name} will review the order scope, property type, location, timeline, and client requirements before confirming availability and fees for appraisal coordination or valuation support.
           </p>
           <div className="mt-6 rounded-xl border border-blue-100 bg-white p-5 text-sm leading-7 text-slate-700 shadow-sm">
             <p className="font-black text-[#083B7A]">Invoice payments</p>
             <p className="mt-2">
-              Payments are made from invoices issued by {site.name}. If you have received an invoice, follow the secure payment link included with that invoice or contact support at <a className="font-bold text-[#0B4EA2]" href={`mailto:${site.email}`}>{site.email}</a>.
+              Customers make one-time invoice payments for appraisal coordination, valuation support, and related real estate valuation services. If you have received an invoice, follow the secure payment link included with that invoice or contact support at <a className="font-bold text-[#0B4EA2]" href={`mailto:${site.email}`}>{site.email}</a>.
             </p>
           </div>
           <div className="mt-6 rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
@@ -58,7 +58,7 @@ export default function OrderAppraisalPage() {
           <div className="grid gap-5 md:grid-cols-3">
             <Field label="Property Type" name="property-type" required options={["Single Family", "Condominium", "Multi-Family", "Commercial", "Investment Property", "Other"]} />
             <Field label="Loan Type" name="loan-type" options={["Purchase", "Refinance", "Private Lending", "Hard Money", "Portfolio Review", "Other"]} />
-            <Field label="Requested Service" name="requested-service" required options={["Residential Appraisal Coordination", "Commercial Appraisal Coordination", "Valuation/Order Support", "AMC Appraisal Management", "Appraisal Review"]} />
+            <Field label="Requested Service" name="requested-service" required options={["Residential Appraisal Coordination", "Commercial Appraisal Coordination", "Valuation Support", "Appraisal Order Coordination", "Valuation Review Support"]} />
           </div>
           <Field label="Invoice Number (if paying an invoice)" name="invoice-number" />
           <label className="block text-sm font-bold text-slate-700">
