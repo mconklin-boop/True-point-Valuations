@@ -6,10 +6,13 @@ export const site = {
     "Appraisal management and valuation order support for residential, commercial, lender, investor, and client-directed appraisal needs.",
   url: "https://truepointvaluationsco.com",
   email: "info@truepointvaluations.com",
-  phone: "[INSERT REAL PHONE]",
-  phoneHref: "",
-  address: "[INSERT REAL BUSINESS ADDRESS OR MAILING ADDRESS]",
-  cityStateZip: "[INSERT CITY, STATE ZIP]",
+  phone: "720-460-0337",
+  phoneHref: "tel:+17204600337",
+  address: "1745 Shea Center Dr",
+  city: "Littleton",
+  state: "CO",
+  postalCode: "80129",
+  cityStateZip: "Littleton, CO 80129",
   paymentProcessor: "Stripe",
   lastUpdated: "June 11, 2026"
 };

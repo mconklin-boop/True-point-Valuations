@@ -36,7 +36,9 @@ const structuredData = {
   address: {
     "@type": "PostalAddress",
     streetAddress: site.address,
-    addressLocality: site.cityStateZip,
+    addressLocality: site.city,
+    addressRegion: site.state,
+    postalCode: site.postalCode,
     addressCountry: "US"
   },
   areaServed: "United States",
