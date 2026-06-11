@@ -25,7 +25,7 @@ export function Footer() {
               className="h-16 w-auto max-w-[300px] rounded-md bg-white object-contain"
             />
           </div>
-          <p className="mt-3 text-sm font-semibold text-blue-100">Professional Appraisal & Valuation Services</p>
+          <p className="mt-3 text-sm font-semibold text-blue-100">Appraisal Coordination & Valuation Support</p>
           <div className="mt-5 space-y-2 text-sm text-blue-50">
             <p>{site.address}</p>
             <p>{site.cityStateZip}</p>
