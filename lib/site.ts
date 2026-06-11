@@ -1,9 +1,9 @@
 export const site = {
   name: "True Point Valuations",
   brandName: "TruePoint Valuations",
-  title: "True Point Valuations | Appraisal Management & Valuation Support",
+  title: "True Point Valuations | Appraisal Coordination & Valuation Support",
   description:
-    "Appraisal management and valuation order support for residential, commercial, lender, investor, and client-directed appraisal needs.",
+    "Appraisal coordination and valuation support services for residential and commercial real estate transactions.",
   url: "https://truepointvaluationsco.com",
   email: "info@truepointvaluationsco.com",
   phone: "720-460-0337",
