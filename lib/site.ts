@@ -5,7 +5,7 @@ export const site = {
   description:
     "Appraisal management and valuation order support for residential, commercial, lender, investor, and client-directed appraisal needs.",
   url: "https://truepointvaluationsco.com",
-  email: "info@truepointvaluations.com",
+  email: "info@truepointvaluationsco.com",
   phone: "720-460-0337",
   phoneHref: "tel:+17204600337",
   address: "1745 Shea Center Dr",
