@@ -16,9 +16,9 @@ export function Footer() {
         <div>
           <div className="inline-block rounded-lg bg-white p-2 shadow-sm ring-1 ring-white/30">
             <img
-              src="/logo.jpg"
+              src="/logo-header-white.jpg"
               alt="TruePoint Valuations"
-              className="h-16 w-auto max-w-[300px] rounded-md object-contain"
+              className="h-16 w-auto max-w-[300px] rounded-md bg-white object-contain"
             />
           </div>
           <p className="mt-3 text-sm font-semibold text-blue-100">Professional Appraisal & Valuation Services</p>
