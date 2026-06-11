@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn about True Point Valuations and our professional appraisal management services."
+  description: "Learn about True Point Valuations and our appraisal coordination and valuation support services."
 };
 
 const commitments = [
@@ -20,12 +20,12 @@ export default function AboutPage() {
       <section className="bg-[#F5F7FA] py-16">
         <div className="container-shell max-w-4xl">
           <p className="text-sm font-extrabold uppercase tracking-wide text-[#F58220]">About {site.name}</p>
-          <h1 className="mt-3 text-5xl font-black text-[#083B7A]">Professional appraisal management and valuation order support.</h1>
+          <h1 className="mt-3 text-5xl font-black text-[#083B7A]">Professional appraisal coordination and valuation support.</h1>
           <p className="mt-6 text-xl leading-9 text-slate-700">
-            {site.name} supports appraisal and valuation workflows for lenders, investors, brokers, private lenders, and clients who need organized order coordination.
+            {site.name} provides appraisal coordination and valuation support services for residential and commercial real estate transactions.
           </p>
           <p className="mt-5 text-lg leading-8 text-slate-700">
-            We focus on order intake, scope review, appraiser coordination, status communication, documentation support, and invoice-based billing. Appraisal availability, pricing, timing, and completion depend on property type, location, scope, assignment conditions, and client or lender requirements.
+            We assist lenders, investors, brokers, and property owners by coordinating appraisal orders, facilitating communication throughout the valuation process, providing valuation review support, and managing appraisal-related workflows. Appraisal availability, pricing, timing, and completion depend on property type, location, scope, assignment conditions, and client or lender requirements.
           </p>
         </div>
       </section>
