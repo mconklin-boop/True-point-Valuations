@@ -14,7 +14,7 @@ export function Header() {
             </Link>
           ))}
           <Link href="/order-appraisal" className="rounded-md bg-[#F58220] px-4 py-2 font-bold text-white shadow-sm hover:bg-[#d96f18]">
-            Start Order
+            Order / Pay
           </Link>
         </nav>
       </div>

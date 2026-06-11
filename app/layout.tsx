@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
     default: site.title,
-    template: "%s | TruePoint Valuations"
+    template: "%s | True Point Valuations"
   },
   description: site.description,
   openGraph: {
@@ -36,13 +36,11 @@ const structuredData = {
   address: {
     "@type": "PostalAddress",
     streetAddress: site.address,
-    addressLocality: "Denver",
-    addressRegion: "CO",
-    postalCode: "80203",
+    addressLocality: site.cityStateZip,
     addressCountry: "US"
   },
   areaServed: "United States",
-  paymentAccepted: "Invoice"
+  paymentAccepted: "Invoice, Credit Card"
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

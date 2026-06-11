@@ -2,21 +2,23 @@ import type { Metadata } from "next";
 import { PolicyPage } from "@/components/PolicyPage";
 import { site } from "@/lib/site";
 
-export const metadata: Metadata = { title: "Terms of Service" };
+export const metadata: Metadata = { title: "Terms & Conditions" };
 
 export default function TermsPage() {
   return (
     <PolicyPage
-      title="Terms of Service"
-      intro="These Terms of Service describe the terms that apply when using the TruePoint Valuations website, submitting inquiries, ordering services, or paying invoices."
+      title="Terms & Conditions"
+      intro={`These Terms & Conditions describe the terms that apply when using the ${site.name} website, submitting inquiries, ordering services, or paying invoices.`}
       sections={[
-        { heading: "Description of Services", body: "TruePoint Valuations provides appraisal management and valuation coordination services for residential, commercial, investor, lender, and related property valuation needs." },
-        { heading: "Payment Terms", body: "Customers are responsible for paying applicable appraisal, valuation, review, and related service fees according to the invoice issued by TruePoint Valuations. Payment does not guarantee completion until the order scope, assignment, and service requirements are confirmed." },
-        { heading: "User Responsibilities", body: "Customers agree to provide accurate contact, billing, property, and order information and to respond promptly to requests needed to coordinate valuation services." },
-        { heading: "Limitation of Liability", body: "To the fullest extent permitted by law, TruePoint Valuations is not liable for indirect, incidental, special, consequential, or punitive damages arising from website use or service coordination." },
-        { heading: "Intellectual Property", body: "Website content, branding, copy, layouts, and related materials are owned by or licensed to TruePoint Valuations and may not be copied or reused without permission." },
-        { heading: "Dispute Resolution", body: "Customers should contact TruePoint Valuations first to resolve any concern. Any unresolved dispute will be handled according to applicable law and venue requirements." },
-        { heading: "Changes to Terms", body: "TruePoint Valuations may update these Terms from time to time. Continued use of the website or services after updates means the revised Terms apply." },
+        { heading: "Description of Services", body: `${site.name} provides appraisal management, appraisal coordination, valuation order support, and related services for residential, commercial, investor, lender, and client-directed property valuation needs.` },
+        { heading: "Order Acceptance", body: "Appraisal orders are subject to availability, scope, property type, location, client requirements, lender requirements, appraiser availability, and order documentation. Submission of a request does not guarantee acceptance, pricing, completion timeline, or a specific valuation result." },
+        { heading: "No Guarantee of Valuation Outcome", body: "We do not guarantee a specific appraised value, valuation conclusion, market result, loan decision, investment result, or third-party acceptance of a report." },
+        { heading: "Client Responsibilities", body: "Clients are responsible for providing accurate contact, billing, property, access, order, and scope information. Delays or inaccurate information may affect pricing, scheduling, delivery, or order completion." },
+        { heading: "Payment Terms", body: `Customers are responsible for paying applicable appraisal, valuation, review, management, and related service fees according to the invoice or order terms issued by ${site.name}. Payments are processed securely through Stripe. Card payments are subject to invoice and order terms.` },
+        { heading: "Limitation of Liability", body: `To the fullest extent permitted by law, ${site.name} is not liable for indirect, incidental, special, consequential, or punitive damages arising from website use or service coordination.` },
+        { heading: "Intellectual Property", body: `Website content, branding, copy, layouts, and related materials are owned by or licensed to ${site.name} and may not be copied or reused without permission.` },
+        { heading: "Dispute Resolution", body: `Customers should contact ${site.name} first to resolve any concern. Any unresolved dispute will be handled according to applicable law and venue requirements.` },
+        { heading: "Changes to Terms", body: `${site.name} may update these Terms from time to time. Continued use of the website or services after updates means the revised Terms apply.` },
         { heading: "Contact Information", body: `Questions about these Terms may be sent to ${site.email} or mailed to ${site.address}, ${site.cityStateZip}.` }
       ]}
     />

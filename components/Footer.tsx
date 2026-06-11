@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
 const footerLinks = [
   { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/terms-of-service", label: "Terms of Service" },
-  { href: "/refund-policy", label: "Refund Policy" },
+  { href: "/terms-of-service", label: "Terms & Conditions" },
+  { href: "/refund-policy", label: "Refund & Dispute Policy" },
   { href: "/cancellation-policy", label: "Cancellation Policy" },
   { href: "/contact", label: "Contact" }
 ];
@@ -15,9 +16,12 @@ export function Footer() {
       <div className="container-shell grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <div className="inline-block rounded-lg bg-white p-2 shadow-sm ring-1 ring-white/30">
-            <img
+            <Image
               src="/logo-header-white.jpg"
               alt="TruePoint Valuations"
+              width={360}
+              height={142}
+              unoptimized
               className="h-16 w-auto max-w-[300px] rounded-md bg-white object-contain"
             />
           </div>
@@ -29,7 +33,11 @@ export function Footer() {
               <a href={`mailto:${site.email}`} className="hover:text-white">{site.email}</a>
             </p>
             <p>
-              <a href={site.phoneHref} className="hover:text-white">{site.phone}</a>
+              {site.phoneHref ? (
+                <a href={site.phoneHref} className="hover:text-white">{site.phone}</a>
+              ) : (
+                site.phone
+              )}
             </p>
           </div>
         </div>
@@ -38,7 +46,7 @@ export function Footer() {
           <div className="mt-4 grid gap-2 text-sm text-blue-50">
             <Link href="/about">About</Link>
             <Link href="/services">Services</Link>
-            <Link href="/order-appraisal">Order Appraisal</Link>
+            <Link href="/order-appraisal">Order / Pay Invoice</Link>
             <Link href="/contact">Contact</Link>
           </div>
         </div>
@@ -52,7 +60,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/15 py-5">
-        <p className="container-shell text-sm text-blue-100">© 2026 TruePoint Valuations. All Rights Reserved.</p>
+        <p className="container-shell text-sm text-blue-100">&copy; 2026 True Point Valuations. All Rights Reserved.</p>
       </div>
     </footer>
   );

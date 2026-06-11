@@ -1,20 +1,23 @@
 export const site = {
-  name: "TruePoint Valuations",
-  title: "TruePoint Valuations | Professional Appraisal & Valuation Services",
+  name: "True Point Valuations",
+  brandName: "TruePoint Valuations",
+  title: "True Point Valuations | Appraisal Management & Valuation Support",
   description:
-    "Professional appraisal management and valuation services nationwide. Residential, commercial, investor, and lender-focused valuation solutions.",
-  url: "https://truepointvaluations.com",
+    "Appraisal management and valuation order support for residential, commercial, lender, investor, and client-directed appraisal needs.",
+  url: "https://truepointvaluationsco.com",
   email: "info@truepointvaluations.com",
-  phone: "(720) 555-0000",
-  phoneHref: "tel:+17205550000",
-  address: "1500 N Grant St #7339",
-  cityStateZip: "Denver, CO 80203"
+  phone: "[INSERT REAL PHONE]",
+  phoneHref: "",
+  address: "[INSERT REAL BUSINESS ADDRESS OR MAILING ADDRESS]",
+  cityStateZip: "[INSERT CITY, STATE ZIP]",
+  paymentProcessor: "Stripe",
+  lastUpdated: "June 11, 2026"
 };
 
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
-  { href: "/order-appraisal", label: "Order Appraisal" },
+  { href: "/order-appraisal", label: "Order / Pay Invoice" },
   { href: "/contact", label: "Contact" }
 ];
