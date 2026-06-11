@@ -6,7 +6,7 @@ const services = [
   "Residential Appraisal Coordination",
   "Commercial Appraisal Coordination",
   "Valuation and Order Support",
-  "AMC Appraisal Management",
+  "Appraisal Order Coordination",
   "Appraisal Review Support"
 ];
 
@@ -24,12 +24,12 @@ export default function HomePage() {
       <section className="bg-[#F5F7FA]">
         <div className="container-shell grid min-h-[680px] gap-10 py-16 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div>
-            <p className="text-sm font-extrabold uppercase tracking-wide text-[#F58220]">Real Estate Appraisal Management Company</p>
+            <p className="text-sm font-extrabold uppercase tracking-wide text-[#F58220]">Appraisal Coordination & Valuation Support</p>
             <h1 className="mt-4 max-w-4xl text-5xl font-black leading-tight text-[#083B7A] md:text-6xl">
-              True Point Valuations appraisal management and order support
+              True Point Valuations appraisal coordination and valuation support
             </h1>
             <p className="mt-6 max-w-2xl text-xl leading-8 text-slate-700">
-              Professional appraisal coordination, valuation order support, and AMC services for lenders, investors, brokers, private lenders, and clients who need clear valuation workflows.
+              True Point Valuations provides appraisal coordination and valuation support services for residential and commercial real estate transactions. We assist lenders, investors, brokers, and property owners with appraisal orders, communication, valuation review support, and related real estate valuation workflows.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/order-appraisal" className="rounded-lg bg-[#0B4EA2] px-6 py-3 font-bold text-white shadow-sm hover:bg-[#083B7A]">
@@ -59,7 +59,7 @@ export default function HomePage() {
             <p className="text-sm font-extrabold uppercase tracking-wide text-[#F58220]">Services</p>
             <h2 className="mt-2 text-4xl font-black text-[#083B7A]">Valuation services built for lending, investment, and property decisions.</h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              We coordinate appraisal orders, communicate scope and status, support documentation needs, and help clients manage invoice-based payment for valuation services.
+              Customers make one-time invoice payments for appraisal coordination, valuation support, and related real estate valuation services.
             </p>
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
