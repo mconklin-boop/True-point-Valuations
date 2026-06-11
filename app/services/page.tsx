@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Residential appraisal coordination, commercial appraisal coordination, valuation order support, and AMC services from True Point Valuations."
+  description: "Residential appraisal coordination, commercial appraisal coordination, valuation order support, and appraisal review support from True Point Valuations."
 };
 
 const groups = [
@@ -24,9 +24,9 @@ const groups = [
     items: ["Property/order intake", "Scope review", "Status updates", "Invoice support"]
   },
   {
-    title: "AMC Appraisal Management Services",
-    body: "Appraisal management coordination for client-directed valuation workflows.",
-    items: ["Appraiser assignment coordination", "Client/lender requirement tracking", "Report delivery support", "Appraisal review support"]
+    title: "Appraisal Order Coordination",
+    body: "Appraisal-related workflow support for client-directed valuation needs.",
+    items: ["Order communication", "Client/lender requirement tracking", "Report delivery support", "Valuation review support"]
   }
 ];
 
@@ -38,7 +38,7 @@ export default function ServicesPage() {
           <p className="text-sm font-extrabold uppercase tracking-wide text-[#F58220]">Services</p>
           <h1 className="mt-3 text-5xl font-black text-[#083B7A]">Appraisal and valuation support for property decisions.</h1>
           <p className="mt-6 text-xl leading-9 text-slate-700">
-            {site.name} coordinates valuation services for residential, commercial, investor, lender, and appraisal management needs. Service availability depends on scope, property type, location, and client requirements.
+            {site.name} provides appraisal coordination and valuation support services for residential and commercial real estate transactions. Service availability depends on scope, property type, location, and client requirements.
           </p>
         </div>
       </section>
